@@ -1,4 +1,4 @@
-# Rudra Keshav 
+# Harsh Sagar
 # AngularTestApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.8. This project is a simple full-stack Task Tracker web application, with its fake backend (json-server) it supports all basic CRUD operations like GET, DELETE, PUT, POST let us have a look into it:
