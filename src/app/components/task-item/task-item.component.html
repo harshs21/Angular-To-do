@@ -1,0 +1,32 @@
+<div
+  [ngClass]="{ remainder: task.remainder }"
+  class="task"
+  (dblclick)="onToggle(task)"
+>
+  <h3>
+    {{ task.text }}
+    <fa-icon
+      title="Delete Task"
+      (click)="onDelete(task)"
+      [ngStyle]="{ color: 'red' }"
+      [icon]="faTimes"
+    ></fa-icon>
+  </h3>
+  <p>
+    {{ task.day }}
+    <fa-icon
+      *ngIf="!task.remainder"
+      title="Set Remainder"
+      (click)="onToggle(task)"
+      [ngStyle]="{ color: 'green' }"
+      [icon]="faBell"
+    ></fa-icon>
+    <fa-icon
+      *ngIf="task.remainder"
+      title="Remove Remainder"
+      (click)="onToggle(task)"
+      [ngStyle]="{ color: 'gray' }"
+      [icon]="faBellSlash"
+    ></fa-icon>
+  </p>
+</div>

@@ -1,0 +1,19 @@
+.form-wrapper {
+  overflow-y: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.add-form {
+  margin-bottom: 40px;
+  animation: topToBottom ease 0.3s;
+  width: 80%;
+}
+@keyframes topToBottom {
+  0% {
+    margin-top: -23%;
+  }
+  100% {
+    margin-top: 0%;
+  }
+}
